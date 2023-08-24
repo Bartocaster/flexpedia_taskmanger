@@ -1,7 +1,8 @@
 @extends('layouts.app')
-
+@section('page-title')
+    Add New Task
+@endsection
 @section('content')
-    <h1>Add New Task</h1>
     @if ($errors->any())
         <ul>
             @foreach ($errors->all() as $error)

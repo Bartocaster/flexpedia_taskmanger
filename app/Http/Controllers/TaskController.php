@@ -21,7 +21,7 @@ public function create()
 public function store(Request $request)
 {
     $request->validate([
-        'title' => 'required|max:255',
+        'title' => 'required|max:50',
     ]);
 
     $task = ['title' => $request->title, 'completed' => false];

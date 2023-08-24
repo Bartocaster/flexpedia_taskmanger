@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
+@section('page-title')
+    Task List
+@endsection
+
 @section('content')
-    <h1>Task List</h1>
     @foreach ($tasks as $index => $task)
     <div>
         <input type="checkbox" {{ $task['completed'] ? 'checked' : '' }} onchange="event.preventDefault(); document.getElementById('complete-task-{{ $index }}').submit();">

@@ -16,7 +16,7 @@ use App\Http\Controllers\TaskController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
+// make al routes here
 
 Route::get('/', [TaskController::class, 'index']);
 Route::get('/tasks/create', [TaskController::class, 'create']);

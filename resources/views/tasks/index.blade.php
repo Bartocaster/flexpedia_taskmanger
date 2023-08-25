@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+<!-- foreach each tasked so they can be displayed  -->
     @foreach ($tasks as $index => $task)
     <div>
         <input type="checkbox" {{ $task['completed'] ? 'checked' : '' }} onchange="event.preventDefault(); document.getElementById('complete-task-{{ $index }}').submit();">
@@ -20,6 +21,6 @@
         </form>
     </div>
 @endforeach
-
+</n>
     <a href="/tasks/create">Add New Task</a>
 @endsection

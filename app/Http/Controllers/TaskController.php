@@ -43,6 +43,8 @@ public function store(Request $request)
 
     return redirect('/');
 }
+
+
 public function complete($index)
 {
     $tasks = session('tasks', []);

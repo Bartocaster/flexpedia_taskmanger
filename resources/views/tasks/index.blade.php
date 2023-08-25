@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<!-- foreach each tasked so they can be displayed  -->
+<!-- foreach each tasked so they can be displayed | make a bootstrap step in having complete and uncompleted  -->
     @foreach ($tasks as $index => $task)
     <div>
         <input type="checkbox" {{ $task['completed'] ? 'checked' : '' }} onchange="event.preventDefault(); document.getElementById('complete-task-{{ $index }}').submit();">
@@ -19,6 +19,7 @@
             @csrf
             <button>Delete</button>
         </form>
+
     </div>
 @endforeach
 </n>

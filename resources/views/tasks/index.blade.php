@@ -9,7 +9,7 @@
 
 
 @section('content')
-    <h2>Uncompleted Tasks</h2>
+    <h2>Incompleted Tasks</h2>
     @foreach ($tasks as $index => $task)
         @if (!$task['completed'])
             <div>

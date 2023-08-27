@@ -13,14 +13,13 @@ use App\Http\Controllers\TaskController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-// make al routes here
 
 Route::get('/', [TaskController::class, 'index']);
 Route::get('/tasks/create', [TaskController::class, 'create']);
 Route::post('/tasks', [TaskController::class, 'store']);
-Route::patch('/tasks/{index}/complete', [TaskController::class, 'complete']);
-Route::delete('/tasks/{task}', [TaskController::class, 'destroy']);
+Route::patch('/tasks/{uuid}/complete', [TaskController::class, 'complete']);
+Route::delete('/tasks/{uuid}', [TaskController::class, 'destroy']);
+
+
+
 

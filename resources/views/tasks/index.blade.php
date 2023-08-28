@@ -11,7 +11,6 @@
             <div>
                 <input type="checkbox" {{ $task['completed'] ? 'checked' : '' }} onchange="event.preventDefault(); document.getElementById('complete-task-{{ $task['uuid'] }}').submit();">
                 {{ $task['title'] }}
-                {{ $task['uuid'] }}
                 <form id="complete-task-{{ $task['uuid'] }}" action="/tasks/{{ $task['uuid'] }}/complete" method="POST" style="display: none;">
                     @method('PATCH')
                     @csrf

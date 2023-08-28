@@ -20,8 +20,8 @@ Follow these steps to set up and run the project locally:
    cd your-repo
    
 2. You need the application docker running on your computer.
-   use docker-compose up -d --build according to build up the container.
-   use "sail up" in the terminal or start the application from your docker API.
+   use  <br>$docker-compose up -d --build  <be> according to build up the container.
+   use  <be> $sail up  <br> in the terminal or start the application from your docker API.
 
 3. Once the container is running you can go to local host or you ip number to see the application.
 

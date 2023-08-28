@@ -1,3 +1,34 @@
+# Task_manger
+
+This project requires Docker for local development and deployment.
+
+## Prerequisites
+
+Make sure you have the following software installed on your system:
+
+- Docker: Containerization platform
+- https://docs.docker.com/get-docker/
+
+## Getting Started
+
+Follow these steps to set up and run the project locally:
+
+1. **Clone the Repository:**
+
+   ```sh
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   
+2. You need the application docker running on your computer.
+   use docker-compose up -d --build according to build up the container.
+   use "sail up" in the terminal or start the application from your docker API.
+
+3. Once the container is running you can go to local host or you ip number to see the application.
+
+
+
+   
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
